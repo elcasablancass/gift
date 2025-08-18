@@ -192,6 +192,12 @@ body::before {
 	color: black;
 }
 
+.heading3{
+	color: black;
+	font-family: cursive;
+	margin-bottom: 1rem;
+}
+
 #stop {
   display: inline-block;
   padding: 12px 28px;
@@ -228,4 +234,19 @@ body::before {
 body .decor img {
 	width: 150px !important;
     height: auto !important;
+}
+
+.credit {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.credit p {
+	font-family: cursive;
+}
+
+.credit a {
+	color: white;
 }
