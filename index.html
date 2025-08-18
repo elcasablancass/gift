@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Gift</title>
 </head>
 <body>
-    <div>
+    <div class="container">
         <div class="heading">
-            <h2>Bales chat jangan lama lama dih, aku kangen :(</h2>
+            <h2>Selamat ulang tahun Linggar Ayu Purwanti!</h2>
         </div>
         <canvas style="display: block; inline-size: 100%; max-inline-size: 400px" width="400" height="400"></canvas>
         <label>
@@ -17,10 +21,43 @@
             <input disabled type="range" min="0" max="1" step="0.01" steo="0.01" value="0" />
         </label>
         <div class="heading bottom">
-            <a href="https://wa.link/8uklpe">Klik sini sinta</a>
+            <a id="buttonPlay" href="#">Klik sini Mbak Ayu</a>
+        </div>  
+        <div id="popups-show">
+            <div class="slick slick-style">
+                <div class="slick-content">
+                    <img src="assets/Ayu1.jpg">
+                </div>
+                <div class="slick-content">
+                    <img src="assets/ayu2.jpg">
+                </div>
+                <div class="slick-content">
+                    <img src="assets/ayu3.jpg">
+                </div>
+                <div class="slick-content">
+                    <img src="assets/ayu4.jpg">
+                </div>
+            </div>
+            <audio id="birthdayMusic">
+                <source src="assets/HUT Linggar Ayu Purwanti.mp3" type="audio/mpeg">
+            </audio>
+            <div class="description">
+                <h2>Happy Birthday!!</h2>
+                <br>
+                <h3>Linggar Ayu Purwanti</h3>
+            </div>
+            <br>
+            <button id="stop">STOP</button>
+            <div class="decor">
+                <img src="assets/ayugif.gif">
+            </div>
         </div>
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/zdog@1.1.3/dist/zdog.dist.min.js"></script>
+    <script  src="general.js"></script>
     <script  src="script.js"></script>
 </body>
 </html>
