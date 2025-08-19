@@ -48,6 +48,7 @@ div.container {
 	border: 2px solid rgba(0, 255, 255, 0.5);
 	width: 90%;
 	max-width: 400px;
+	margin-bottom: 2rem;
 }
 
 canvas {
@@ -228,17 +229,17 @@ body::before {
 .decor {
 	position: absolute;
 	left: 0;
-	top: 43%;
+	top: 50%;
 }
 
 body .decor img {
-	width: 150px !important;
+	width: 130px !important;
     height: auto !important;
 }
 
 .credit {
     position: absolute;
-    bottom: 1rem;
+    bottom: 5px;
     width: 100%;
     text-align: center;
 }
